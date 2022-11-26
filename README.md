@@ -1,108 +1,264 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Darkland
 
-Welcome Amor-Jansen,
+Image of mockup
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is an interactive 2d scroller game. My aim is to provide something fun and with increasing difficulty as you advance through
+the levels. Using nothing but JavaScript, HTML and CSS to build this game.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The story of the game is there has been a huge attack on earth and you are an animal just trying to survive the apocalypse. Avoid the mutant creatures, fond food and saftey.
 
-## Gitpod Reminders
+##Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+   1. User stories
+       - First time visitor goals
+       - Returning visitor goals
+       - Frequent user goals
+    2. Design
+       - Colour scheme
+       - Typography
+       - Wireframes
+    3. Existing features
+       - Home page
+       - Gallery
+       - Contact us
+       - Features to add
+    4. Testing
+       - HTML
+       - CSS
+       - Wave
+       - Lighthouse
+    5. Unfixed bugs
+    6. Fixed bugs
+    7. Deployment
+    8. Credits
+       - Content
+       - Media
 
-`python3 -m http.server`
+User stories
 
-A blue button should appear to click: _Make Public_,
+First time visitor goals:
 
-Another blue button should appear to click: _Open Browser_.
+    As a first time visitor, 
+    As a first time visitor, 
+    As a first time visitor, 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Returning visitor goals:
 
-A blue button should appear to click: _Make Public_,
+    As a returning visitor, I want to see more images on display.
+    As a returning visitor, I would like to know where you are located.
+    As a returning visitor, I would like to have more social media links.
 
-Another blue button should appear to click: _Open Browser_.
+    Frequent user goals
+        As a frequent user, I would like to see blog posts.
+        As a frequent user, I would like to see the nature photos for sale as prints on canvas.
+        As a frequent user, I would like to be notified about specials.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Design
 
-To log into the Heroku toolbelt CLI:
+Colour scheme
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    Through out this website I used a parchment colour #F8F0E3 as the main font colour.
+    The background colour is #008385, this is set in place if the background image fails.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Typography
 
-------
+    I used Shalimar as a heading font. I like how it looks like cursive but is not difficult to read.
+    I used Overpass for the rest of the body, I feel like it looks clean and again simple to read.
+    Both fonts were imported from Google fonts.
 
-## Release History
+    Wireframes
+        Home page wire frames - View
+        Gallery wire frames - View
+        Contact us page - View
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Existing features:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    Website is fully responsive on all devices.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    Has interactive elements.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Home page
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    The logo is functional as a home button:
+    Logo
+    The navigation bar is also functional to the three pages: Home, Gallery, Contact us. There is a dashed line when hovered over and it becomes solid when selected.
+    Image of the navigation bar
+    Brief description of the company.
+    Image of slogan and brief description
+    Social media links that open to a new tab.
+    Image of footer
+    Custom 404 page not found page.
+    Image of 404 page
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Gallery
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    Has the same navigation bar as on Home page.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    Images are all taken by myself (Amor Jansen). I would like to keep these photos as copyrighted and not for use by anyone other than me.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    It is valuable to see the level of photography.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    Image of some of the gallery images
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    Contains the same footer as the Home page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Contact Us
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    Has the same navigation bar as the Home page.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    When filled in the user will be taken to a thank you screen.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    Image of thank you page
 
-------
+    Contains the same footer as home page.
 
-## FAQ about the uptime script
+    Features to add
 
-**Why have you added this script?**
+        I would like to add the option to purchase my original nature photos as prints or on canvas.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+        I would like to add more photos to the gallery.
 
-**How will this affect me?**
+        I would like to add a blog post.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Technologies used
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Languages used
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    HTML
+    CSS
 
-**So….?**
+    Frameworks, Libraries and Programs used
+        Google Fonts - Used to import the Shalimar and Overpass fonts.
+        Font awesome - Used for the footer icons and copyright icon.
+        Git - Used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+        Github - Used to store code after being pushed from Git.
+        Balsamiq - Used to create wireframes for this website.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Testing
 
-**Can I opt out?**
+Validator testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+HTML
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+I used the W3C HTML validator. I used url input.
 
-**Anything more?**
+    Image of validated HTML
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+CSS
 
----
+I used the W3C CSS validator. I used direct input. (There were 4 warnings on the code I used from https://dcode.domenade.com)
 
-Happy coding!
+    Image of validated CSS
+
+Wave accessibility
+
+I ran the entire website through wave and the only warnings to come up were links to home page that are adjacent.
+
+    Wave accessibility Home page
+    Wave accessibility Gallery page
+    Wave accessibility Contact us page
+
+Lighthouse
+
+I ran my page through lighthouse in chrome.
+
+    Lighthouse Home page
+    Lighthouse Gallery page
+    Lighthouse Contact page
+
+    Testing user stories
+
+First time visitor goals:
+
+    As a first time visitor, I want to be able to easily navigate the page.
+        I ensured that the navigation bar is easily recognisable.
+        The page you are on will have a solid underline.
+        If you hover over a different page it will have a dashed underline.
+
+    As a first time visitor, I would like to know what the page is about and what it offers.
+        The pages are well labeled due to the navigation bar.
+        There is a very nice description on the home page about the company.
+        Once contact is made prices will be discussed.
+
+    As a first time visitor, I want to find social media links and view testimonials of previous clients.
+        I have made sure the social icons are at the footer.
+        All social media links open in a new tab.
+
+Returning visitor goals:
+
+    As a returning visitor, I want to see more images on display.
+        Due to the responsiveness of this page adding more photos will be easy.
+        I can only post images permitted by my clients.
+        More images and behind the scenecs will be posted on the social media links.
+
+    As a returning visitor, I would like to know where you are located.
+        I have added a clause on the home page saying where I can service.
+
+    As a returning visitor, I would like to have more social media links.
+        I will include more social media links as the business grows.
+        I would like to include Twitter for competitions.
+
+Frequent user goals
+
+    As a frequent user, I would like to see blog posts.
+        I have the wireframes to add that to the website.
+        Blog
+        As the website grows I can add more features
+
+    As a frequent user, I would like to see the nature photos for sale as prints on canvas.
+        As stated in the Existing features it is definitly something I want to add.
+
+    As a frequent user, I would like to be notified about specials.
+        I will post specials on the social media links.
+        I will run competitions on the social media links too.
+        I can include a newsletter as well.
+
+    Unfixed bugs
+
+Bug 	Reason
+Warning in Css validation 	This is code from https://dcode.domenade.com
+
+    Fixed bugs
+
+Bug 	How I fixed it 	Outcome
+Background image was not full screen 	I used min-height: 100vh; 	As desired
+Images were not displaying correctly 	I used a grid method (see credits) 	As desired
+Validator warning in HTML 	I icluded a heading in the contact us page 	As desired
+Deployment
+
+The method I used to deploy this site is as follows:
+
+- Go to my Github and click on this repository
+- Click on settings 
+- On the left hand menu select pages
+- Select main branch 
+- Select save
+
+The live website can be found at : https://amor-jansen.github.io/zippynerd-photography-studio/contact.html
+Credits
+
+Code
+
+    Some insperation from the love running project by Code Institute. (Navigation bar)
+    I did Google a lot of concepts and used information from w3schools.com.
+    I used https://dcode.domenade.com guide on grid in css for images.
+
+Content
+
+    I used Google fonts Shalimar and Overpass.
+    I used Fontawesome for the footer logos.
+    I used Favicon.oi for my favicon.
+    I used Balsamiq for the wireframes.
+    I used https://ui.dev/amiresponsive for the image under my README logo.
+
+Media
+
+    I used https://ui.dev/amiresponsive for the image under my README logo.
+    All images used in this project are my own.
+    Please view the copyright under the gallery.
+    Images are subject to copyright.
+
+Thanks
+
+    A special thank you to my mentor for his helpful input and information throughout.
+
