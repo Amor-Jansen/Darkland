@@ -153,6 +153,7 @@ The live website can be found at :
     I used Favicon.oi for my favicon.
     I used Balsamiq for the wireframes.
     I used https://ui.dev/amiresponsive for the image under my README logo.
+    I got a lot of insperation and code from https://www.youtube.com/c/Frankslaboratory
 
 ## Media
 
