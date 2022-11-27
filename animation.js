@@ -4,9 +4,9 @@ const CANVAS_WIDTH = canvas.width = 600;
 const CANVAS_HEIGHT = canvas.height = 600;
 
 const playerImage = new Image();
-playerImage.src = 'assets/images/Walk-rat.png'
-const spriteWidth = 32;
-const spriteHeight = 32;
+playerImage.src = './assets/images/player.png'
+const spriteWidth = 575;
+const spriteHeight = 523;
 
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);

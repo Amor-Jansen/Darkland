@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mansalva&display=swap');
 
-* {
+ /* * {
     margin: 0;
     padding: 0;
     border: 0;
-}
+}*/
+body {
+    background-image: linear-gradient(to bottom,  #888B8D, #43464b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    }
 
 #can1 {
     border: 5px solid black;
@@ -14,4 +21,10 @@
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
+}
+
+h1 {
+    font-family: Gloria Hallelujah, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
 }
