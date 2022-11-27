@@ -156,7 +156,8 @@ The live website can be found at :
     I got a lot of insperation and code from https://www.youtube.com/c/Frankslaboratory
 
 ## Media
-
+   - Sprite image is from https://www.frankslaboratory.co.uk/downloads/97/player.png
+   - Background images from https://craftpix.net/freebies/free-halloween-2d-game-backgrounds/
 
 ## Thanks
 
