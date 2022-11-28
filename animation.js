@@ -24,12 +24,12 @@ const animationStates = [
 ];
 animationStates.forEach((state, index) => {
     let frames = {
-        location: {},
+        loc: [],
     }
     for (let j = 0; j < state.frames; j++){
         let positionX = j * spriteWidth;
         let positionY = index * spriteHeight;
-        frames.location.push({x: positionX, y: positionY});
+        frames.loc.push({x: positionX, y: positionY});
     }
     spriteAnimations[state.name] = frames;
 });
