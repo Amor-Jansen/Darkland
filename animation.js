@@ -11,15 +11,30 @@ let frameX = 0;
 let frameY = 0;
 let gameFrame = 0;
 const staggerFrame = 4;
+const spriteAnimations = [];
+const animationStates = [
+    {
+        name: 'standing',
+        frames: 7,
+    },
+    {
+        name: 'jump',
+        frames: 7,
+    }
+];
+animationStates.forEach((state, index) => {
+    let frames = {
+        loc: {},
+    }
+
+});
 
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    //ctx.fillRect(50,50,100,100);
-    ctx.drawImage(playerImage, frameX * spriteWidth, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    if (gameFrame % staggerFrame == 0){
-        if (frameX < 6) frameX++;
-        else frameX = 0;
-    }
+    let position = Math.floor(gameFrame/staggerFrame) % 6;
+    frameX = spriteWidth * position;
+    ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+
     gameFrame++;
     requestAnimationFrame(animate);
 
