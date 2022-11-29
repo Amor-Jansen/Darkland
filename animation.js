@@ -1,3 +1,4 @@
+//Code from https://www.youtube.com/c/Frankslaboratory I followed a lot of his videos
 //Canvas information / dimensions
 const canvas = document.getElementById('can1');
 const ctx = canvas.getContext('2d');
@@ -9,10 +10,8 @@ const playerImage = new Image();
 playerImage.src = 'assets/images/player.png'
 const spriteWidth = 100;
 const spriteHeight = 91;
-let frameX = 0;
-let frameY = 0;
 let gameFrame = 0;
-const staggerFrame = 4;
+const staggerFrame = 5;
 const spriteAnimations = [];
 const animationStates = [
     {
@@ -40,8 +39,9 @@ console.log(animationStates)
 // Animation for sprite using the canvas and sprite sizes
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    let position = Math.floor(gameFrame/staggerFrame) % 6;
-    frameX = spriteWidth * position;
+    let position = Math.floor(gameFrame/staggerFrame) % spriteAnimations['standing'].loc.length;
+    let frameX = spriteWidth * position;
+    let frameY = spriteAnimations['standing'].loc[position].y;
     ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
 
     gameFrame++;
