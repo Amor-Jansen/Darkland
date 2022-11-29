@@ -1,8 +1,10 @@
+//Canvas information / dimensions
 const canvas = document.getElementById('can1');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 600;
 const CANVAS_HEIGHT = canvas.height = 600;
 
+//Player image information/ sprite animation 
 const playerImage = new Image();
 playerImage.src = 'assets/images/player.png'
 const spriteWidth = 100;
