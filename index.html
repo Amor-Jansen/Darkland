@@ -10,8 +10,27 @@
 <body>
     <!--Game name-->
     <h1>Darkland</h1>
+
     <!--Game canvas-->
     <canvas id="can1"></canvas>
+
+    <!--Controls for game-->
+    <div class="controls">
+        <label for="animations">Choose Animation</label>
+        <select name="animations" id="animations"></select>
+        <!--Same animations given on sprite sheet-->
+        <option value="standing">Standing</option>
+        <option value="jump">Jump</option>
+        <option value="fall">Fall</option>
+        <option value="run">Run</option>
+        <option value="confused">Confused</option>
+        <option value="sit">Sit</option>
+        <option value="roll">Roll</option>
+        <option value="bite">Bite</option>
+        <option value="knockout">K.O</option>
+        <option value="hit">Hit</option>
+    </div>
+    
     <!--JavaScript sorcecode-->
     <script src="animation.js"></script>
 </body>
