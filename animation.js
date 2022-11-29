@@ -1,4 +1,10 @@
 //Code from https://www.youtube.com/c/Frankslaboratory I followed a lot of his videos
+let playerState = 'run';
+const dropdown = document.getElementById('animations');
+dropdown.addEventListener('change', function(e){
+    playerState = e.target.value;
+})
+
 //Canvas information / dimensions
 const canvas = document.getElementById('can1');
 const ctx = canvas.getContext('2d');
@@ -9,8 +15,8 @@ const CANVAS_HEIGHT = canvas.height = 600;
 const playerImage = new Image();
 playerImage.src = 'assets/images/player.png'
 const spriteWidth = 100;
-const spriteHeight = 91;
-let playerState = 'run';
+const spriteHeight = 92;
+
 
 let gameFrame = 0;
 const staggerFrame = 5;

@@ -14,11 +14,11 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    font-family: Manslavia, sans-serif;
     }
 
 /*Styling for canvas*/
 #can1 {
-    border: 5px solid black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,8 +27,22 @@ body {
     height: 600px;
 }
 
+/* Style for heading*/
 h1 {
     font-family: Gloria Hallelujah, sans-serif;
     text-align: center;
     letter-spacing: 2px;
+}
+
+/*Styling of controls*/
+.controls {
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.controls, select, option {
+    font-size: 25px;
 }
