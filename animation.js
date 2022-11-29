@@ -37,6 +37,7 @@ animationStates.forEach((state, index) => {
 });
 console.log(animationStates)
 
+// Animation for sprite using the canvas and sprite sizes
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     let position = Math.floor(gameFrame/staggerFrame) % 6;
