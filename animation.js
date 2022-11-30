@@ -1,6 +1,6 @@
 //Code from https://www.youtube.com/c/Frankslaboratory I followed a lot of his videos
 //control options for animations
-let playerState = 'run';
+let playerState = 'standing';
 const dropdown = document.getElementById('animations');
 dropdown.addEventListener('change', function(e){
     playerState = e.target.value;
