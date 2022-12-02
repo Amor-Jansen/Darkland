@@ -3,7 +3,7 @@
 Image of mockup
 
 This is an interactive 2d scroller game. My aim is to provide something fun and with increasing difficulty as you advance through
-the levels. Using nothing but JavaScript, HTML and CSS to build this game.
+the levels. Using nothing but Vanilla JavaScript, HTML and CSS to build this game.
 
 The story of the game is there has been a huge attack on earth and you are an animal just trying to survive the apocalypse. Avoid the mutant creatures, fond food and saftey.
 
@@ -156,8 +156,9 @@ The live website can be found at :
     I got a lot of insperation and code from https://www.youtube.com/c/Frankslaboratory
 
 ## Media
-   - Sprite image is from https://www.frankslaboratory.co.uk/downloads/97/player.png
+   - Sprite image is from https://bevouliin.com/gogle-boy-game-character
    - Background images from https://craftpix.net/freebies/free-halloween-2d-game-backgrounds/
+   - Monster sprites are from https://bevouliin.com/fat-green-monster-sprites/
 
 ## Thanks
 
