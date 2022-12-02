@@ -25,6 +25,12 @@ p {
     padding-top: 15px;
 }
 
+ul {
+    font-family:  Mansalva, sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
 /*Styling for canvas*/
 #can1 {
     position: absolute;
