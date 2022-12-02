@@ -17,6 +17,10 @@ body {
     font-family: Mansalva, sans-serif;
     }
 
+nav {
+    float: left;
+}
+
 /*Paragraph styling*/
 p {
     font-family: Mansalva, sans-serif;
