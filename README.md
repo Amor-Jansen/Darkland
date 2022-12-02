@@ -81,6 +81,7 @@ The story of the game is there has been a huge attack on earth and you are a cha
 
    - HTML
    - CSS
+   - JavaScript
 
 ### Frameworks, Libraries and Programs used
    - Google Fonts - Used to import the Shalimar and Overpass fonts.
@@ -127,6 +128,10 @@ The story of the game is there has been a huge attack on earth and you are a cha
     As a frequent user,
 
 ## Unfixed bugs
+
+|Bug|fix|result|
+|---|---|------|
+|fontawesome is not working| 
 
 ## Fixed bugs
 
