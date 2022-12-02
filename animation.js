@@ -18,7 +18,7 @@ playerImage.src = 'assets/images/player.png'
 const spriteWidth = 100;
 const spriteHeight = 92;
 
-
+//Sprite animations variables
 let gameFrame = 0;
 const staggerFrame = 5;
 const spriteAnimations = [];
@@ -64,6 +64,7 @@ const animationStates = [
         frames: 4,
     }
 ];
+// Animation for the different actions the sprite can do
 animationStates.forEach((state, index) => {
     let frames = {
         loc: [],

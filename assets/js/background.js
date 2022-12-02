@@ -1,9 +1,11 @@
+//Canvas information
 const canvas = document.getElementById('can2');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 800;
 const CANVAS_HEIGHT = canvas.width = 700;
 let gameSpeed = 5;
 
+//Background Layers for parallax (for the background to move at a different speed to the character)
 const backgroundLayer1 = new Image();
 backgroundLayer1.src = 'assets/images/1.png';
 const backgroundLayer2 = new Image();
@@ -19,6 +21,7 @@ backgroundLayer6.src = 'assets/images/6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/7.png';
 
+//Animation of the background
 function animate(){
     ctx.drawImage(backgroundLayer1, 0, 0);
     requestAnimationFrame(animate);
