@@ -9,6 +9,13 @@ window.addEventListener('load', function(){
 
     }
 
+    class Player {
+
+    }
+
+    class Background {
+
+    }
 
 
 
