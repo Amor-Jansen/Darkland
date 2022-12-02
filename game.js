@@ -18,5 +18,12 @@ window.addEventListener('load', function(){
     }
 
 
+    class Enemy {
+
+    }
+
+    class EnemyHandler {
+
+    }
 
 })
