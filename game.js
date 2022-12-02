@@ -4,4 +4,12 @@ window.addEventListener('load', function(){
     const context = canvas.getContext('2d');
     canvas.width = 800;
     canvas.height = 720;
+
+    class InputHandler{
+
+    }
+
+
+
+
 })
