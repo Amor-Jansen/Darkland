@@ -17,6 +17,7 @@ body {
     font-family: Mansalva, sans-serif;
     }
 
+/*Paragraph styling*/
 p {
     font-family: Mansalva, sans-serif;
     font-size: 200%;
@@ -25,12 +26,14 @@ p {
     padding-top: 15px;
 }
 
+/*Unordered list styling*/
 ul {
     font-family:  Mansalva, sans-serif;
     font-size: 200%;
     text-align: center;
 }
 
+/*Start button styling*/
 .start-button {
     font-size: 150%;
     font-family: Mansalva, sans-serif;
