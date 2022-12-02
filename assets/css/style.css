@@ -31,6 +31,17 @@ ul {
     text-align: center;
 }
 
+.start-button {
+    font-size: 150%;
+    font-family: Mansalva, sans-serif;
+    text-align: center;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+
 /*Styling for canvas*/
 #can1 {
     position: absolute;
