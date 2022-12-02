@@ -17,6 +17,14 @@ body {
     font-family: Mansalva, sans-serif;
     }
 
+p {
+    font-family: Mansalva, sans-serif;
+    font-size: 200%;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 15px;
+}
+
 /*Styling for canvas*/
 #can1 {
     position: absolute;
