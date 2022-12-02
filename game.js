@@ -26,4 +26,12 @@ window.addEventListener('load', function(){
 
     }
 
+    class displayStatText {
+
+    }
+
+    function animate() {
+
+    }
+
 })
