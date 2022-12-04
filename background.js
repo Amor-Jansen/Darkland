@@ -33,10 +33,19 @@ class Layer {
         this.speed = gameSpeed * this.speedModifier;
     }
     update(){
-
+        this.speed = gameSpeed * this.speedModifier;
+        if (this.x <= this.width){
+            this.x = this.width + this.xx - this.speed;
+        }
+        if (this.xx <= this.width){
+            this.xx = this.width + this.x - this.speed;
+        }
+        this.x = Math.floor(this.x - this.speed);
+        this.xx = Math.floor(this.xx -this.speed);
     }
     draw(){
-        
+        ctx.drawIImage(this.image, this.x, this.y, this.width, this.height);
+        ctx.drawIImage(this.image, this.xx, this.y, this.width, this.height);
     }
 }
 
