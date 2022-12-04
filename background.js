@@ -17,7 +17,7 @@ backgroundLayer4.src = 'assets/images/layer4.png';
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = 'assets/images/layer5.png';
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = 'assets/images/layer6.png';
+backgroundLayer6.src = 'asstes/images/layer6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/layer7.png';
 
