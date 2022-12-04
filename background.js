@@ -7,27 +7,27 @@ let gameSpeed = 5;
 
 //Background Layers for parallax (for the background to move at a different speed to the character)
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = 'assets/images/1.png';
+backgroundLayer1.src = 'assets/images/layer1.png';
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = 'assets/images/2.png';
+backgroundLayer2.src = 'assets/images/layer2.png';
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = 'assets/images/3.png';
+backgroundLayer3.src = 'assets/images/layer3.png';
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = 'assets/images/4.png';
+backgroundLayer4.src = 'assets/images/layer4.png';
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = 'assets/images/5.png';
+backgroundLayer5.src = 'assets/images/layer5.png';
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = 'assets/images/6.png';
+backgroundLayer6.src = 'assets/images/layer6.png';
 const backgroundLayer7 = new Image();
-backgroundLayer7.src = 'assets/images/7.png';
+backgroundLayer7.src = 'assets/images/layer7.png';
 
 //Background layer information for callback and draw image
 class Layer {
     constructor(image, speedModifier){
         this.x = 0;
         this.y = 0;
-        this.width = 1920;
-        this.heght = 1080;
+        this.width = 1000;
+        this.heght = 536;
         this.xx = this.width;
         this.image = image;
         this.speedModifier = speedModifier;
@@ -50,12 +50,12 @@ class Layer {
     }
 };
 
-const layer1 = new Layer(backgroundLayer1, 0.5);
-const layer2 = new Layer(backgroundLayer2, 0.5);
-const layer3 = new Layer(backgroundLayer3, 0.5);
-const layer4 = new Layer(backgroundLayer4, 0.5);
-const layer5 = new Layer(backgroundLayer5, 0.5);
-const layer6 = new Layer(backgroundLayer6, 0.5);
+const layer1 = new Layer(backgroundLayer1, 0.2);
+const layer2 = new Layer(backgroundLayer2, 0.2);
+const layer3 = new Layer(backgroundLayer3, 0.4);
+const layer4 = new Layer(backgroundLayer4, 0.4);
+const layer5 = new Layer(backgroundLayer5, 0.6);
+const layer6 = new Layer(backgroundLayer6, 0.8);
 const layer7 = new Layer(backgroundLayer7, 1);
 
 const gameObjects = [layer1, layer2, layer3, layer4, layer5, layer6, layer7];
