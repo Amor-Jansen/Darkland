@@ -21,9 +21,12 @@ backgroundLayer6.src = 'assets/images/6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/7.png';
 
-//Animation of the background
+let x = 0;
+
+//Animation loop for the background
 function animate(){
-    ctx.drawImage(backgroundLayer5, 0, 0);
+    ctx.drawImage(backgroundLayer1, x, 0);
+    x--;
     requestAnimationFrame(animate);
 };
 animate();
