@@ -95,6 +95,10 @@ h1 {
     height: 720px;
 }
 
+#slider {
+    color: whitesmoke;
+}
+
 /*Game canvas styling*/
 
 #game-canvas {
