@@ -2,7 +2,7 @@
 const canvas = document.getElementById('can2');
 const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 800;
-const CANVAS_HEIGHT = canvas.width = 700;
+const CANVAS_HEIGHT = canvas.width = 720;
 let gameSpeed = 5;
 
 //Background Layers for parallax (for the background to move at a different speed to the character)
