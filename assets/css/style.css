@@ -90,3 +90,14 @@ h1 {
     top: 50%;
     left: 50%;
 }
+
+/*Game canvas styling*/
+
+#game-canvas {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
