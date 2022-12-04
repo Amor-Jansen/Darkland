@@ -25,8 +25,9 @@ let x = 0;
 
 //Animation loop for the background
 function animate(){
-    ctx.drawImage(backgroundLayer1, x, 0);
-    x--;
+    ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    ctx.drawImage(backgroundLayer2, x, 0);
+    x -= gameSpeed;
     requestAnimationFrame(animate);
 };
 animate();
