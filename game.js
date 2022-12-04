@@ -5,8 +5,13 @@ window.addEventListener('load', function(){
     canvas.width = 500;
     canvas.height = 500;
 
-    class InputHandler{
-
+    // Game class is how the game will function all information will run through it
+    class game {
+        constructor(width, height){
+            this.width = width;
+            this.height = height;
+        }
+        update()
     }
 
     class Player {
