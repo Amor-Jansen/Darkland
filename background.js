@@ -22,14 +22,18 @@ const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/7.png';
 
 let x = 0;
+let x2 = 1000;
 
 //Animation loop for the background
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
     ctx.drawImage(backgroundLayer2, x, 0);
-    if (x < -1000) x = 0;
+    ctx.drawImage(backgroundLayer2, x2, 0);
+    if (x < -1000) x = 1000;
     else x -= gameSpeed;
-    x -= gameSpeed;
+    if (x2 < -1000) x2 = 1000;
+    else x2 -= gameSpeed;
+    x2 -= gameSpeed;
     requestAnimationFrame(animate);
 };
 animate();
