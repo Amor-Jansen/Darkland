@@ -21,8 +21,23 @@ backgroundLayer6.src = 'assets/images/6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/7.png';
 
-class layer {
-    
+class Layer {
+    constructor(image, speedModifier){
+        this.x = 0;
+        this.y = 0;
+        this.width = 1920;
+        this.heght = 1080;
+        this.xx = this.width;
+        this.image = image;
+        this.speedModifier = speedModifier;
+        this.speed = gameSpeed * this.speedModifier;
+    }
+    update(){
+
+    }
+    draw(){
+        
+    }
 }
 
 //Animation loop for the background
