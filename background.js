@@ -21,6 +21,7 @@ backgroundLayer6.src = 'assets/images/6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/7.png';
 
+//Background layer information for callback and draw image
 class Layer {
     constructor(image, speedModifier){
         this.x = 0;
@@ -41,7 +42,7 @@ class Layer {
             this.xx = this.width + this.x - this.speed;
         }
         this.x = Math.floor(this.x - this.speed);
-        this.xx = Math.floor(this.xx -this.speed);
+        this.xx = Math.floor(this.xx - this.speed);
     }
     draw(){
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
@@ -55,13 +56,17 @@ const layer3 = new Layer(backgroundLayer3, 0.5);
 const layer4 = new Layer(backgroundLayer4, 0.5);
 const layer5 = new Layer(backgroundLayer5, 0.5);
 const layer6 = new Layer(backgroundLayer6, 0.5);
-const layer7 = new Layer(backgroundLayer7, 0.5);
+const layer7 = new Layer(backgroundLayer7, 1);
+
+const gameObjects = [layer1, layer2, layer3, layer4, layer5, layer6, layer7];
 
 //Animation loop for the background
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    layer5.update();
-    layer5.draw();
+    gameObjects.forEach(object => {
+        object.update();
+        object.draw();
+    });
     requestAnimationFrame(animate);
 };
 animate();

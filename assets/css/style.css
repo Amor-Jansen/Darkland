@@ -82,6 +82,7 @@ h1 {
 /*Background styling*/
 
 #can2 {
+    background-color: black;
     position: absolute;
     border: 3px solid white;
     width: 800px;
