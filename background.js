@@ -4,22 +4,23 @@ const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 800;
 const CANVAS_HEIGHT = canvas.width = 720;
 let gameSpeed = 5;
+let gameFrame = 0;
 
 //Background Layers for parallax (for the background to move at a different speed to the character)
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = 'images/layer1.png';
+backgroundLayer1.src = 'assets/images/layer1.png';
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = 'images/layer2.png';
+backgroundLayer2.src = 'assets/images/layer2.png';
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = 'images/layer3.png';
+backgroundLayer3.src = 'assets/images/layer3.png';
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = 'images/layer4.png';
+backgroundLayer4.src = 'assets/images/layer4.png';
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = 'images/layer5.png';
+backgroundLayer5.src = 'assets/images/layer5.png';
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = 'images/layer6.png';
+backgroundLayer6.src = 'assets/images/layer6.png';
 const backgroundLayer7 = new Image();
-backgroundLayer7.src = 'images/layer7.png';
+backgroundLayer7.src = 'assets/images/layer7.png';
 
 const slider = document.getElementById('slider');
 slider.value = gameSpeed;
@@ -37,7 +38,6 @@ class Layer {
         this.y = 0;
         this.width = 1000;
         this.heght = 536;
-        //this.xx = this.width;
         this.image = image;
         this.speedModifier = speedModifier;
         this.speed = gameSpeed * this.speedModifier;
@@ -47,11 +47,8 @@ class Layer {
         if (this.x <= -this.width){
             this.x = 0;
         }
-        /*if (this.xx <= this.width){
-            this.xx = this.width + this.x - this.speed;
-        }*/
         this.x = Math.floor(this.x - this.speed);
-        //this.xx = Math.floor(this.xx - this.speed);
+        //this.x = gameFrame * this.speed % this.width;
     }
     draw(){
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
@@ -76,6 +73,7 @@ function animate(){
         object.update();
         object.draw();
     });
+    gameFrame--;
     requestAnimationFrame(animate);
 };
 animate();
