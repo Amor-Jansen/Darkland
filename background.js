@@ -21,6 +21,7 @@ backgroundLayer6.src = 'assets/images/layer6.png';
 const backgroundLayer7 = new Image();
 backgroundLayer7.src = 'assets/images/layer7.png';
 
+const slider = document.getElementById('slider');
 //Background layer information for callback and draw image
 class Layer {
     constructor(image, speedModifier){
