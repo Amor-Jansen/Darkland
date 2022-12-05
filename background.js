@@ -27,6 +27,8 @@ const showGameSpeed = document.getElementById('showGameSpeed');
 showGameSpeed.innerHTML = gameSpeed;
 slider.addEventListener('change', function(e){
     console.log(e);
+    gameSpeed = e.target.value;
+    showGameSpeed.innerHTML = e.target.value;
 });
 //Background layer information for callback and draw image
 class Layer {
@@ -35,7 +37,7 @@ class Layer {
         this.y = 0;
         this.width = 1000;
         this.heght = 536;
-        this.xx = this.width;
+        //this.xx = this.width;
         this.image = image;
         this.speedModifier = speedModifier;
         this.speed = gameSpeed * this.speedModifier;
@@ -43,17 +45,17 @@ class Layer {
     update(){
         this.speed = gameSpeed * this.speedModifier;
         if (this.x <= -this.width){
-            this.x = this.width + this.xx - this.speed;
+            this.x = 0;
         }
-        if (this.xx <= this.width){
+        /*if (this.xx <= this.width){
             this.xx = this.width + this.x - this.speed;
-        }
+        }*/
         this.x = Math.floor(this.x - this.speed);
-        this.xx = Math.floor(this.xx - this.speed);
+        //this.xx = Math.floor(this.xx - this.speed);
     }
     draw(){
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-        ctx.drawImage(this.image, this.xx, this.y, this.width, this.height);
+        ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
     }
 };
 
