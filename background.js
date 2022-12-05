@@ -7,21 +7,27 @@ let gameSpeed = 5;
 
 //Background Layers for parallax (for the background to move at a different speed to the character)
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = 'assets/images/layer1.png';
+backgroundLayer1.src = 'images/layer1.png';
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = 'assets/images/layer2.png';
+backgroundLayer2.src = 'images/layer2.png';
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = 'assets/images/layer3.png';
+backgroundLayer3.src = 'images/layer3.png';
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = 'assets/images/layer4.png';
+backgroundLayer4.src = 'images/layer4.png';
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = 'assets/images/layer5.png';
+backgroundLayer5.src = 'images/layer5.png';
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = 'assets/images/layer6.png';
+backgroundLayer6.src = 'images/layer6.png';
 const backgroundLayer7 = new Image();
-backgroundLayer7.src = 'assets/images/layer7.png';
+backgroundLayer7.src = 'images/layer7.png';
 
 const slider = document.getElementById('slider');
+slider.value = gameSpeed;
+const showGameSpeed = document.getElementById('showGameSpeed');
+showGameSpeed.innerHTML = gameSpeed;
+slider.addEventListener('change', function(e){
+    console.log(e);
+});
 //Background layer information for callback and draw image
 class Layer {
     constructor(image, speedModifier){
